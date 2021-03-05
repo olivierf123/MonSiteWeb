@@ -1,5 +1,131 @@
 .contact-container{
     position: relative;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+
+    .contact-box{
+        max-width: 100%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+
+        .contact-left{
+            height: 70vh;
+            background: url(/images/jay-mantri-TFyi0QOx08c-unsplash.jpg) no-repeat center;
+            background-size: cover;
+        }
+        
+        .contact-right{
+            padding: 25px 40px;
+
+
+            .field{
+                width: 100%;
+                padding:  0.5rem 1rem;
+                background-color: rgba(230,230,230,0.6) ;
+                outline: none;
+                border: 2px solid rgba(0,0,0,0);
+                font-size: 2rem;
+                margin-bottom: 22px;
+
+            }
+
+            .field:hover{
+                background-color: rgba(0,0,0,0.1);
+            }
+            .field:focus{
+                border: 2px solid #d0d0d0;
+            }
+
+            .area{
+                min-height: 150px;
+                font-size: 2.5rem
+            }
+
+            .submit{
+                border: 2px solid #fff;
+                box-sizing: inherit;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 13pt;
+                padding: 10px 20px;
+                transition: all 0.5s;
+
+            }
+
+
+
+        }
+
+        h2{
+            margin-bottom: 2rem;
+            text-align: center;
+            padding-top: 50px;
+            margin-top: 50px;
+            text-transform: uppercase;
+            font-size: 5rem;
+            padding-bottom: 10px;
+
+
+        }
+
+        h2::after{
+            content:' ';
+            display:block;
+            border:2px solid #d0d0d0;
+            border-radius:4px;
+            -webkit-border-radius:4px;
+            -moz-border-radius:4px;
+            width: 50%;
+            transform: translateX(50%);
+            box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+            -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+            -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+
+        }
+    }   
+
+}
+
+.contact-container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/jay-mantri-TFyi0QOx08c-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(90px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.contact-container{
+    position: relative;
     height: 100vh;
     
     .custom-shape-divider-top-1614802043 {
@@ -78,3 +204,4 @@
 
 }
 
+*/

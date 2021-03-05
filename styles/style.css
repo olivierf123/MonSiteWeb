@@ -501,70 +501,199 @@ nav a {
 
 .contact-container {
   position: relative;
-  height: 100vh;
-}
-
-.contact-container .custom-shape-divider-top-1614802043 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
+  height: 70vh;
 }
 
-.contact-container h2 {
+.contact-container .contact-box {
+  max-width: 100%;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact-container .contact-box .contact-left {
+  height: 70vh;
+  background: url(/images/jay-mantri-TFyi0QOx08c-unsplash.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.contact-container .contact-box .contact-right {
+  padding: 25px 40px;
+}
+
+.contact-container .contact-box .contact-right .field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(230, 230, 230, 0.6);
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  font-size: 2rem;
+  margin-bottom: 22px;
+}
+
+.contact-container .contact-box .contact-right .field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-container .contact-box .contact-right .field:focus {
+  border: 2px solid #d0d0d0;
+}
+
+.contact-container .contact-box .contact-right .area {
+  min-height: 150px;
+  font-size: 2.5rem;
+}
+
+.contact-container .contact-box .contact-right .submit {
+  border: 2px solid #fff;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13pt;
+  padding: 10px 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact-container .contact-box h2 {
   margin-bottom: 2rem;
   text-align: center;
   padding-top: 50px;
   margin-top: 50px;
-  margin-bottom: 80px;
   text-transform: uppercase;
   font-size: 5rem;
+  padding-bottom: 10px;
 }
 
-.contact-form {
-  position: relative;
-  background: #1e242c;
-  max-width: 700px;
-  color: #fff;
-  margin: 0 auto;
-  padding: 15px;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+.contact-container .contact-box h2::after {
+  content: ' ';
+  display: block;
+  border: 2px solid #d0d0d0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  width: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.contact-form .input-fields .input {
-  background: transparent;
-  margin: 10px;
-  width: 353px;
-  height: 30px;
-}
-
-.contact-form textarea {
-  background: transparent;
-  width: 353px;
-  height: 152px;
-}
-
-.contact-form .submit {
+.contact-container::after {
+  content: '';
   position: absolute;
-  bottom: 0;
-  right: 0;
-  border: 2px solid white;
-  cursor: pointer;
-  font-size: 12px;
-  background: transparent;
-  color: #fff;
-  font-size: 12pt;
-  margin: 5px 10px 5px 0px;
-  padding: 10px 10px 10px 15px;
-  height: 45px;
-  color: white;
-  width: 17%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/jay-mantri-TFyi0QOx08c-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  -webkit-filter: blur(90px);
+          filter: blur(90px);
 }
+
+/*.contact-container{
+    position: relative;
+    height: 100vh;
+    
+    .custom-shape-divider-top-1614802043 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+ 
+
+    h2{
+
+        margin-bottom: 2rem;
+        text-align: center;
+        padding-top: 50px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+        font-size: 5rem;
+    }
+}
+
+.contact-form{
+    position: relative;
+    background: #1e242c;
+    max-width: 700px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 1rem 3rem 0 rgba(0,0,0,0.2);
+
+    .input-fields{
+
+        .input{
+            background: transparent;
+            margin: 10px;
+            width: 353px;
+            height: 30px;
+        }
+
+
+    }
+
+        
+
+    textarea{
+        background: transparent;
+        width: 353px;
+        height: 152px;
+        
+        
+
+    }
+
+    .submit{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: 2px solid white;
+        cursor: pointer;
+        font-size: 12px;
+        background: transparent;
+        color: #fff;
+        font-size: 12pt;
+        margin: 5px 10px 5px 0px;
+        padding: 10px 10px 10px 15px;
+        height: 45px;
+        color: white;
+        width: 17%;
+
+    }
+
+}
+
+*/
 /*# sourceMappingURL=style.css.map */
