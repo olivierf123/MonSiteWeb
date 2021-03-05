@@ -1,0 +1,93 @@
+.home{
+  background: url(/images/howling-red-zATDM3xbOBI-unsplash.jpg) repeat fixed 100%;
+  background-size:cover;
+  height: 85vh;
+  background-position: center;
+  position: relative;
+
+}
+
+.nav-container{
+
+}
+
+
+/*My navigation bar */
+
+nav{
+width: 55%;
+margin: auto;
+min-height: 10vh;
+padding: 3rem 0rem;
+
+    ul{
+        text-align: right;
+        list-style: none;
+    }
+
+
+    li{
+        display: inline-block;
+
+    }
+
+    /*Padding between Projects and Contact me*/
+    a{
+        padding: 3rem 3rem;
+        
+    }
+
+    
+}
+
+.showcase{
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: 22.5% repeat(3,minmax(3rem, 1fr)) 22.5%;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 1fr 2fr 1fr;
+
+
+    h2{
+       grid-column: 2/3;
+        grid-row: 1/2;
+        align-self:flex-end
+
+    }
+
+
+    p{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: center;
+
+    }
+
+    .typing::before{
+        content: "> "
+
+    }
+
+    .typing::after{
+        content: "";
+        right: 1px;
+        height: 90%;
+        border-right: 15px solid #444649;
+        animation: blink 1s infinite ease;
+
+    }
+
+    @keyframes blink{
+        0%{
+            opacity: 0;
+
+        }
+        100%{
+            opacity: 1;
+        }
+
+
+    }
+
+}
+

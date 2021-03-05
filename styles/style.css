@@ -1,0 +1,570 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bitter', serif;
+  background: #f1f7f9;
+}
+
+h2 {
+  font-size: 8rem;
+  color: #444649;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+li {
+  font-size: 2rem;
+  color: #444649;
+}
+
+a {
+  text-decoration: none;
+  color: #444649;
+}
+
+.home {
+  background: url(/images/howling-red-zATDM3xbOBI-unsplash.jpg) repeat fixed 100%;
+  background-size: cover;
+  height: 85vh;
+  background-position: center;
+  position: relative;
+}
+
+/*My navigation bar */
+nav {
+  width: 55%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  /*Padding between Projects and Contact me*/
+}
+
+nav ul {
+  text-align: right;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  padding: 3rem 3rem;
+}
+
+.showcase {
+  display: -ms-grid;
+  display: grid;
+  min-height: 90vh;
+  -ms-grid-columns: 22.5% (minmax(3rem, 1fr))[3] 22.5%;
+      grid-template-columns: 22.5% repeat(3, minmax(3rem, 1fr)) 22.5%;
+  -ms-grid-columns: 10% 1fr 10%;
+      grid-template-columns: 10% 1fr 10%;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+}
+
+.showcase h2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.showcase p {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.showcase .typing::before {
+  content: "> ";
+}
+
+.showcase .typing::after {
+  content: "";
+  right: 1px;
+  height: 90%;
+  border-right: 15px solid #444649;
+  -webkit-animation: blink 1s infinite ease;
+          animation: blink 1s infinite ease;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.projects-container {
+  position: relative;
+}
+
+/*Project section */
+.projects {
+  min-height: 90vh;
+  width: 55%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*Card. 1 card = 1 project */
+}
+
+.projects h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.projects .cards {
+  vertical-align: baseline;
+  display: inline-block;
+  width: 100%;
+}
+
+.projects .card {
+  position: relative;
+  margin-bottom: 60px;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 10dp;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .card img {
+  width: 100%;
+  min-width: 25rem;
+  max-width: 25rem;
+  position: relative;
+  display: block;
+}
+
+.projects .card .card-info .text-project {
+  margin: 0.5rem 0 1rem 2rem;
+  text-transform: uppercase;
+}
+
+.projects .card .card-info p {
+  margin: 3rem 0 1rem 2rem;
+  font-size: 1.7rem;
+}
+
+.projects .card .card-info .github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .card .card-info .github .github-info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4rem 0 1rem 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  min-width: 15rem;
+  max-width: 15rem;
+}
+
+.projects .card .card-info .github .github-info a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.projects .card .card-info .github .github-info a img {
+  min-width: 4rem;
+  max-width: 4rem;
+  margin: 1rem;
+}
+
+.projects .card .card-info .github .codes-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+  margin: 4rem 0 1rem 1.5rem;
+  align-items: center;
+  border-radius: 4px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  min-width: 11.5rem;
+  max-width: 11.5rem;
+}
+
+.projects .card .card-info .github .codes-info .img-java {
+  margin: 1rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+.projects .card .card-info .github .codes-info p {
+  margin: 0.5rem;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.projects .card .card-info .github .codes-info2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+  margin: 4rem 0 1rem 1.5rem;
+  align-items: center;
+  border-radius: 4px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  min-width: 9.5rem;
+  max-width: 9.5rem;
+}
+
+.projects .card .card-info .github .codes-info2 p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.projects .card .card-info .github .codes-info2 .img-android {
+  margin: 1rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+.projects .card .card-info .github .codes-info3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+  margin: 4rem 0 1rem 1.5rem;
+  align-items: center;
+  border-radius: 4px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+.projects .card .card-info .github .codes-info3 p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.projects .card .card-info .github .codes-info3 .img-android {
+  margin: 1rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+.projects .card .card-info .github .codes-info4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+  margin: 4rem 0 1rem 1.5rem;
+  align-items: center;
+  border-radius: 4px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  min-width: 9rem;
+  max-width: 9rem;
+}
+
+.projects .card .card-info .github .codes-info4 p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.projects .card .card-info .github .codes-info4 .img-android {
+  margin: 1rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+.projects .card .card-info .github .codes-info5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+  margin: 4rem 0 1rem 1.5rem;
+  align-items: center;
+  border-radius: 4px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  min-width: 11rem;
+  max-width: 11rem;
+}
+
+.projects .card .card-info .github .codes-info5 p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.projects .card .card-info .github .codes-info5 .img-android {
+  margin: 1rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+.projects .card .card-info .github .codes-info6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+  margin: 4rem 0 1rem 1.5rem;
+  align-items: center;
+  border-radius: 4px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+.projects .card .card-info .github .codes-info6 p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.projects .card .card-info .github .codes-info6 .img-java {
+  margin: 1rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+.projects .card .card-info .github .codes-info7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+  margin: 4rem 0 1rem 1.5rem;
+  align-items: center;
+  border-radius: 4px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  min-width: 16.5rem;
+  max-width: 16.5rem;
+}
+
+.projects .card .card-info .github .codes-info7 p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.projects .card .card-info .github .codes-info7 .img-android {
+  margin: 1rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+.contact-container {
+  position: relative;
+  height: 100vh;
+}
+
+.contact-container .custom-shape-divider-top-1614802043 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.contact-container h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.contact-form {
+  position: relative;
+  background: #1e242c;
+  max-width: 700px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .input-fields .input {
+  background: transparent;
+  margin: 10px;
+  width: 353px;
+  height: 30px;
+}
+
+.contact-form textarea {
+  background: transparent;
+  width: 353px;
+  height: 152px;
+}
+
+.contact-form .submit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 12px;
+  background: transparent;
+  color: #fff;
+  font-size: 12pt;
+  margin: 5px 10px 5px 0px;
+  padding: 10px 10px 10px 15px;
+  height: 45px;
+  color: white;
+  width: 17%;
+}
+/*# sourceMappingURL=style.css.map */
