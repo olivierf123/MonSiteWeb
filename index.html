@@ -24,8 +24,8 @@
         <div class="nav-container">
             <nav>
                 <ul>
-                    <li><a href="#projects">Mes projects</a></li>
-                    <li><a href="#contact">Contactez-moi</a></li>
+                    <li><a href="#projects-container">Mes projects</a></li>
+                    <li><a href="#contactez-moi">Contactez-moi</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +35,7 @@
                 <h2 class="typing">Olivier Froment</h2>
             </div>
         </section>
-        <div class="projects-container">
+        <div class="projects-container" id="projects-container">
             <section class="projects">
                 <h2>Projects</h2>
                 <div class="cards">
@@ -140,15 +140,15 @@
         </section>
         </div>
 
-        <div class="contact-container">
+        <div class="contact-container" id="contactez-moi">
             <div class="contact-box">
                 <div class="contact-left"></div>
                 <div class="contact-right">
                     <h2>Contact</h2>
-                    <input type="text" class="field" placeholder = "Your Name">
-                    <input type="email" class="field" placeholder = "Your Email">
-                    <textarea class="field area" placeholder = "Your Message"></textarea>
-                    <button class="submit">Submit</button>
+                    <input type="text" name="name" class="field" placeholder = "Your Name">
+                    <input type="email" name="email" class="field" placeholder = "Your Email">
+                    <textarea name= "message" class="field area" placeholder = "Your Message"></textarea>
+                    <button name="submit" type="submit" class="submit">Submit</button>
                 </div>
             </div>
         </div>
