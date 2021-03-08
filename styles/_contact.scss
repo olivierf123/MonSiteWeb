@@ -46,7 +46,11 @@
 
             .area{
                 min-height: 150px;
-                font-size: 2.5rem
+                font-size: 2.5rem;
+                max-height: 270px;
+                resize: vertical;
+            
+             
             }
 
             .submit{

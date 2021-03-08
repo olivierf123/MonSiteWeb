@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAA;EAEb,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,OAAO;EACf,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;EACZ,IAAI,EAAE,CAAC;EACP,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,MAAM;EACd,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,CAAC;EACR,GAAG,EAAE,KAAK;EACV,KAAK,EAAE,IAAI;CACV",
-    "sources": [
-        "chevron.scss"
-    ],
-    "names": [],
-    "file": "chevron.css"
-}

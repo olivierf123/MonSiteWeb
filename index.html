@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Olivier</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
@@ -21,10 +19,9 @@
 <body>
 
     <main>
-        <div class="nav-container">
             <nav>
                 <ul>
-                    <li><a href="#projects-container">Mes projects</a></li>
+                    <li><a href="#projects-container">Mes projets</a></li>
                     <li><a href="#contactez-moi">Contactez-moi</a></li>
                 </ul>
             </nav>
@@ -45,8 +42,7 @@
                         </div>
                         <div class="card-info">
                             <h4 class="text-project">Mon Siteweb</h4>
-                            <p>Le site que vous voyez actuellement. Text ici bla bla blasdfdsfdsfds fs sdfdsf sdfds
-                                fdsfsd </p>
+                            <p>Le site que vous voyez actuellement. Ce site a été conçu pour afficher mes projets personnels. </p>
                             <div class="github">
                                 <div class="github-info">
 
@@ -69,16 +65,12 @@
                                     <p>JS</p>
                                 </div>
 
-                                <div class="codes-info5">
-                                    <img src="images/icons8-react-80.png" class="img-android" alt="">
-                                    <p>React</p>
-                                </div>
-
                             </div>
                         </div>
                     </div>
+            
 
-                </div>
+               
 
                 <div class="card">
                     <div class="card-img">
@@ -86,7 +78,8 @@
                     </div>
                     <div class="card-info">
                         <h4 class="text-project">Language Game App</h4>
-                        <p>Un jeux mobile permettant au joueur d'essayer de deviner la langue de la chansons jouée
+                        <p>Un jeu mobile permettant au joueur d'essayer de deviner la langue de la chanson jouée. D'autres fonctionnalités seront disponibles dont un leaderboard et 
+                            d'autres jeux (en construction). Possède une base de données avec Firebase pour stocker les données des joueurs.
                         </p>
                         <div class="github">
                             <div class="github-info">
@@ -103,8 +96,6 @@
 
                         </div>
                     </div>
-
-
                 </div>
 
                 <div class="card">
@@ -113,9 +104,8 @@
                     </div>
                     <div class="card-info">
                         <h4 class="text-project">IMDB App</h4>
-                        <p>Application android qui va chercher les données de IMDB pour connaître le top250 de films,
-                            top 250 de séries TV et
-                            connaîtres le rating des épisodes d'une série télé
+                        <p>Application Android : utilise un API pour chercher les données du site web IMDB sous format JSON avec retrofit. On peut choisir le top 250 de films, top 250 des séries télévisées ainsi que les épisodes d'une série télévisée spécifique.
+
                         </p>
                         <div class="github">
                             <div class="github-info">
@@ -133,8 +123,10 @@
                         </div>
 
                     </div>
-
                 </div>
+
+               
+            </div>
         </div>
 
         </section>
@@ -145,16 +137,24 @@
                 <div class="contact-left"></div>
                 <div class="contact-right">
                     <h2>Contact</h2>
-                    <form class="contact-form" action="contactform.php" method="post">
-                    <input type="text" name="name" class="field" placeholder = "Your Name">
-                    <input type="email" name="email" class="field" placeholder = "Your Email">
-                    <textarea name= "message" class="field area" placeholder = "Your Message"></textarea>
-                    <button name="submit" type="submit" class="submit">Submit</button>
+                    <form class="contact-form" action="https://formspree.io/f/myybqrow" method="post">
+                    <input type="text" name="name" class="field" placeholder = "Votre Nom">
+                    <input type="email" name="email" class="field" placeholder = "Votre Courriel">
+                    <textarea name= "message" class="field area" placeholder = "Votre Message"></textarea>
+                    <button name="submit" type="submit" class="submit">Soumettre</button>
                 </form>
                 </div>
             </div>
         </div>
         </div>
+
+
+
+        <section class="footer">
+
+            <h4>Olivier Froment @ 2021</h4>
+
+        </section>
 
     </main>
     <script src="/styles/typewriter.js"></script>

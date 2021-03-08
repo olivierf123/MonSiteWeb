@@ -7,7 +7,10 @@ let letter = '';
 (function type(){
 
     currentText = texts[count];
+
+
     letter = currentText.slice(0, ++index);
+
 
     document.querySelector('.typing').textContent = letter;
     if (letter.length === currentText.length){

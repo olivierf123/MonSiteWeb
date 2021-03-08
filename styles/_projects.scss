@@ -10,7 +10,7 @@
 
 .projects{
     min-height: 90vh;
-    width: 55%;
+    width: 65%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -34,10 +34,11 @@
 
     }
     
-    /*Card. 1 card = 1 project */
 
     .card{
         position: relative;
+        transition: all 1s;
+
         margin-bottom: 60px;
         background-color: #fff;
         border-radius: 1rem;
@@ -46,16 +47,23 @@
         padding: 2rem;
         display: flex;
 
+        .card-img{
+            position: relative
+
+        }
+
         img{
-            width: 100%;
-            min-width: 25rem;
-            max-width: 25rem;
             position: relative;
             display: block;
+            max-width: 25rem;
+            min-width: 25rem;
+        
     
         }
 
         .card-info{
+
+            position:relative;
 
             .text-project{
                 margin: 0.5rem 0 1rem 2rem;
@@ -66,11 +74,16 @@
                 margin: 3rem 0 1rem 2rem;
                 font-size: 1.7rem;
 
+
             }   
 
             .github{
 
                 display: flex;
+                box-sizing: border-box;
+                flex-wrap: wrap;
+
+
   
                 .github-info{
                 
@@ -93,6 +106,8 @@
                          font-size: 1.3rem;
                          align-items: center;
                          margin: 0;
+                         
+                         
 
                          img{
                             min-width: 4rem;
@@ -100,6 +115,12 @@
                             margin: 1rem;
                          }
                      }
+
+                     a:hover{
+                        zoom: 101%;
+                        font-weight: bolder;
+                        
+                     } 
        
                 }
                 .codes-info{
@@ -328,13 +349,26 @@
                         max-width: 4rem;
 
                     }
-
-
                 }
-
-           
-                
             }
         }
     }
+
 }
+
+
+@media screen and(max-width: 1450px){
+    .card{
+        flex-direction: column;
+        max-width: 80rem;
+
+        .card-img{
+
+            display: none;
+        }
+
+    }
+    
+
+}
+

@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -12,6 +13,10 @@ html {
 body {
   font-family: 'Bitter', serif;
   background: #f1f7f9;
+  -webkit-transform: preserve-3d;
+          transform: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 h2 {
@@ -145,7 +150,7 @@ nav a {
 /*Project section */
 .projects {
   min-height: 90vh;
-  width: 55%;
+  width: 65%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,7 +161,6 @@ nav a {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  /*Card. 1 card = 1 project */
 }
 
 .projects h2 {
@@ -177,6 +181,8 @@ nav a {
 
 .projects .card {
   position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   margin-bottom: 60px;
   background-color: #fff;
   border-radius: 1rem;
@@ -189,12 +195,19 @@ nav a {
   display: flex;
 }
 
+.projects .card .card-img {
+  position: relative;
+}
+
 .projects .card img {
-  width: 100%;
-  min-width: 25rem;
-  max-width: 25rem;
   position: relative;
   display: block;
+  max-width: 25rem;
+  min-width: 25rem;
+}
+
+.projects .card .card-info {
+  position: relative;
 }
 
 .projects .card .card-info .text-project {
@@ -211,6 +224,10 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projects .card .card-info .github .github-info {
@@ -251,6 +268,11 @@ nav a {
   min-width: 4rem;
   max-width: 4rem;
   margin: 1rem;
+}
+
+.projects .card .card-info .github .github-info a:hover {
+  zoom: 101%;
+  font-weight: bolder;
 }
 
 .projects .card .card-info .github .codes-info {
@@ -499,6 +521,19 @@ nav a {
   max-width: 4rem;
 }
 
+@media screen and (max-width: 1450px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 80rem;
+  }
+  .card .card-img {
+    display: none;
+  }
+}
+
 .contact-container {
   position: relative;
   display: -webkit-box;
@@ -562,6 +597,8 @@ nav a {
 .contact-container .contact-box .contact-right .area {
   min-height: 150px;
   font-size: 2.5rem;
+  max-height: 270px;
+  resize: vertical;
 }
 
 .contact-container .contact-box .contact-right .submit {
@@ -613,5 +650,13 @@ nav a {
   z-index: -1;
   -webkit-filter: blur(90px);
           filter: blur(90px);
+}
+
+.footer {
+  font-size: 15rem;
+  line-height: 0.5em;
+  font-family: 'Bitter', serif;
+  text-align: center;
+  color: #444649;
 }
 /*# sourceMappingURL=style.css.map */
