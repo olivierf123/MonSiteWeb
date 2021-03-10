@@ -3,6 +3,7 @@ let count = 0;
 let index = 0;
 let currentText = '';
 let letter = '';
+let secondanim = 0;
 
 
 (function type(){
@@ -21,9 +22,15 @@ let letter = '';
     if (letter.length === currentText.length){
         count++;
         index = 0;
-        setTimeout(10000);
     }
 
-    setTimeout(type, 100);
+    if (count === 1 && secondanim === 0){
+        secondanim = 1;
+        setTimeout(type,750);
 
-}());
+    } else{
+        setTimeout(type,100);
+    }
+
+
+}()); 

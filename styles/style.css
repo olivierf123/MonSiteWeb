@@ -117,6 +117,7 @@ nav a:hover::after {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: 6em;
+  color: blanchedalmond;
 }
 
 .showcase p {
