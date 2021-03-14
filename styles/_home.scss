@@ -61,6 +61,19 @@ padding: 3rem 0rem;
 
 }
 
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .profile-picture{
+        margin-top: 5rem;
+        border-radius: 30px;
+        height: 45rem;
+    }
+
+}
+
 
 .showcase{
     display: grid;
@@ -68,6 +81,8 @@ padding: 3rem 0rem;
     grid-template-columns: 22.5% repeat(3,minmax(3rem, 1fr)) 22.5%;
     grid-template-columns: 10% 1fr 10%;
     grid-template-rows: 1fr 2fr 1fr;
+
+    
 
 
 
